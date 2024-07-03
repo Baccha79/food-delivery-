@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    color: #fff;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background:  linear-gradient(rgba(73, 73, 73, 0.3),rgba(124, 124, 124, 0.3)) ,url(image/background/raspberries-2023404_1920.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav p{
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Berkshire Swash', cursive;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav ul{
+    list-style: none;
+    display:inline-flex;
+    margin-right: 90px;
+    
+}
+nav ul li{
+    padding: 1px 20px;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none ;
+    font-family: 'Marhey', cursive;
+    transition: 0.6s;
+}
+nav ul li a:hover{
+    color: #ffd33e;
+    border-bottom: 1px solid #ffd33e;
+}
+.home{
+    margin-top: 5%;
+    text-align: center;
+}
+.home h1{
+    font-size:40px;
+    font-family: 'Berkshire Swash', cursive;
+    word-spacing: 10px;
+
+}
+.home p{
+    padding: 20px 30%;
+    word-spacing: 5px;
+    font-family: 'Marhey', cursive ;
+}
+.home a{
+    text-decoration: none;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+.home a:hover{
+    background-color: #d1b34e;
+    border: none;
+}
+i{
+    display: none;
+}
+@media(max-width:800px)
+{
+    nav{
+        display: block;
+        text-align: center;
+    }
+    nav p{
+        margin: 0;
+    }
+    nav ul{
+        margin: 0;
+    }
+    header{
+        height: 100vh;
+        width: 100%;
+    }
+    nav ul li{
+        padding: 1px 10px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .home{
+        margin-top: 10%;
+    }
+    .home p{
+        padding: 0 10%;
+        margin: 50px 0;
+    }
+    .home a{
+        margin-bottom: 20px;
+        display: inline;
+    }
+}
+                                                    /* now styling of section.first */
+
+section.first{
+    /* background:  linear-gradient(rgba(73, 73, 73, 0.3),rgba(124, 124, 124, 0.3)); */
+    height: 100%;
+    width: 100%;
+    /* text-align: center; */
+    padding: 5%;
+    font-family: 'Marhey', cursive;
+    text-transform: capitalize;
+    position: relative;
+}
+.first h1{
+    font-size: 50px;
+    /* font-family: 'Marhey', cursive; */
+    color: #000;
+    margin-top: 50px;
+}
+.first p{
+    color: #000;
+    
+}
+.first img{
+    position: absolute;
+    top: -30px ;
+    right: 60px;
+}
+@media (max-width:800px){
+    section.first{
+        /* heigkcht: 100%; */
+        padding-left: 40px;
+    }
+    .first h1{
+        font-size: 20px;
+    }
+    .first p{
+        font-size: 5px;
+    }
+    .first img{
+        width: 100px ;
+        height: 100px;
+        top: 70px;
+        right: 20px;
+    }
+}
+                                        /* now styling of section.reserve */
+
+
+section.reserve{
+    /* background:  linear-gradient(rgba(82, 80, 80, 0.3),rgba(82, 76, 76, 0.3)); */
+    height: 100vh;
+    font-family: 'Marhey', cursive;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform:uppercase;
+    margin-top: 10%;
+
+}
+.reserve h1{
+    color: #000;
+}
+.search{
+    margin-top: 40px;
+    border: 1px solid #000;
+    display: inline-flex;
+    padding: 10px 10px;
+}
+.search span{
+    height: 20px;
+    width: 1px;
+    background-color: #000;
+    margin: 1px 1px;
+}
+.search input{
+    border: none;
+    outline: none;
+    color: #000;
+    width: 100%;
+    /* padding: 2px 60px; */
+}
+.reserve i{
+    color: #000;
+    margin-right: 10px;
+    
+}
+.first-search{
+    display: flex;
+    padding: 1px 20px;
+    cursor: pointer;
+}
+.reservation-time{
+    display: inline-flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.res-feature{
+    width: 30%;
+    /* border: 1px solid black; */
+    padding: 10px 30px;
+    background-color: #fdfeff;
+    box-shadow: 0 0 10px 0 #000;
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+.res-feature:hover{
+    box-shadow: 0 0 17px 0 #000;
+}
+.res-feature p{
+    color: #000;
+    font-family: monospace;
+    word-spacing: normal;
+    font-size: 15px;
+}
+.res-feature img{
+    width: 100px ;
+    height: 100px;
+}
+.res-feature h1{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.reserve a{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #000  ;
+    margin-top: 40px;
+    display: inline-block;
+    transition: .3s;
+}
+.reserve a:hover{
+    background-color: #d1b34e;
+    border: none;
+    box-shadow: 0 0 17px 0 #000;
+}
+@media (max-width:800px){
+    .reservation-time{
+        display: block;
+    }
+    .res-feature{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .reserve h1{
+        font-size: 20px;
+    }
+    .search{
+        margin: 10px 20px;
+    }
+}
+                                    /* now styling of section.gym-freak */
+
+                                    
+.gym-freak {
+    height: 100vh;
+    width: 100%;
+    color: #000;
+    padding:10px 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+.gym-freak h1{
+    color: #000;
+    text-align: center;
+    font-family: 'Marhey', cursive;
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+.gym-item{
+    padding: 30px 50px;
+    font-family: 'Marhey', cursive;
+    text-transform: capitalize;
+}
+.gym-item h2{
+    color: #000;
+
+}
+.gym-menu{
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+.gym-food{
+    width: 22%;
+    text-align: center;
+    box-shadow: 0 0 10px 0 #000;
+    margin: auto;
+    align-items: center;
+}
+.gym-food img{
+    height: 100px ;
+    width: 100px;
+}
+.gym-food h1{
+    font-size: large;
+}
+.gym-food p{
+    color: #000;
+    font-family: 'marhey';
+}
+.gym-freak a{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #000  ;
+    margin-top: 20px;
+    display: inline-block;
+    transition: .3s;
+    margin-bottom: 20px;
+    font-family: 'marhey';
+}
+.gym-freak a:hover{
+    background-color: #d1b34e;
+    border: #d1b34e solid 1px;
+    /* border: none; */
+    box-shadow: 0 0 17px 0 #000;
+}
+@media (max-width:800px){
+    .gym-freak{
+        margin-top: 650px;
+    }
+    .gym-freak h1{
+        font-size: 20px;
+        padding: 0 30px;
+    }
+    .gym-menu{
+        display: block;
+    }
+    .gym-food{
+        height: 50%;
+        width: 100%;
+        padding: 10px 30px;
+        margin: 20px 0;
+    }
+    .gym-food h1{
+        font-size: smaller;
+    }
+    .gym-food p{
+        font-size: smaller;
+    }
+    .gym-item h2{
+        font-size: small;
+    }
+}
+
+                                        /* now styling of section.perks */
+
+section.perks{
+    display: inline-block;
+    margin: auto 0;
+    /* height: 50vh; */
+    /* width: 100%; */
+    color: #000;
+    padding:10px 30px;
+    margin-top: 100px;
+    text-align: center;
+    /* background-color: rgba(85, 28, 28, 0.267); */
+}
+.provide{
+    width: 30%;
+    padding: 20px 50px;
+    
+}
+.provide img{
+    height: 100px;
+    width: 100px;
+}
+.provide p{
+    color: #000;
+    font-family: 'marhey';
+}
+.live{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
