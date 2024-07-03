@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD NINJA</title>
+    <link rel="stylesheet" href="yo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Berkshire+Swash&family=Marhey&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4fe2a8791b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <p>Food Ninja</p>
+        <div class="navbar" id="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#login-signup">Login/Signup</a></li>
+                <li><a href="#fake-review">Fake Review</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <header>
+            <div class="home">
+                <h1>Food Ninja</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <a href="" class="order-btn">Order Now</a>
+            </div>
+        </header>
+        <section class="first">
+            <h1>Order food the easy way</h1>
+            <p>Now you order food from anywhere you want in just 30 sec...</p>
+            <img src="image/dekivery.png" alt="">
+        </section>
+        <section class="reserve">
+            <h1>You can also reserve your table in the restaurant you want</h1>
+            <div class="search">
+                <div class="first-search">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="search" placeholder="Select city">
+                </div>
+                <span></span>
+                <div class="first-search">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Restaurant you want">
+                </div>
+            </div>
+            <div class="reservation-time">
+                <div class="seat-reserve res-feature">
+                    <img src="image/spoonand fork.png" alt="">
+                    <h1>Book your insight spot</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+                <div class="reserve-time res-feature">
+                    <img src="image/calender.png" alt="">
+                    <h1>Book on your handy date</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+                <div class="dating res-feature">
+                    <img src="image/dating.png " alt="">
+                    <h1>Booking for special occasion</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </div>
+            <a href="">Book now</a>
+        </section>
+        <section class="gym-freak">
+            <h1>We have something special for gym freaks</h1>
+            <div class="gym-item">
+                <h2>We provide healthy and rich food for gym enthusiasts</h2>
+                <div class="gym-menu">
+                    <div class="gym-food">
+                        <img src="image/brokly.png" alt="">
+                        <h1>Rich in vitamin and antioxidant food</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </div>
+                    <div class="gym-food">
+                        <img src="image/fish.png" alt="">
+                        <h1>Rich in protein food</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </div>
+                    <div class="gym-food">
+                        <img src="image/salad.png" alt="">
+                        <h1>Low carbs food</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </div>
+                    <div class="gym-food">
+                        <img src="image/shake.png" alt="">
+                        <h1>Protein drinks before and after workout</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+            </div>
+            <a href="">Book your healthy food</a>
+        </section>
+        <section class="perks">
+            <div class="live">
+                <div class="provide">
+                    <img src="image/dekivery.png" alt="">
+                    <p>Experience Food Ninja's superfast delivery for food delivered fresh & on time</p>
+                </div>
+                <div class="provide">
+                    <img src="image/location.png" alt="">
+                    <p>Know where your order is at all times, from the restaurant to your doorstep</p>
+                </div>
+                <div class="provide">
+                    <img src="image/limit.png" alt="">
+                    <p>Order in for yourself or for the group, with no restrictions on order value</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Login/Signup Section -->
+    <section id="login-signup">
+        <div class="form-container">
+            <div class="form-box">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" onclick="showSignup()">Signup</a></p>
+            </div>
+            <div class="form-box" id="signupFormBox" style="display: none;">
+                <h2>Signup</h2>
+                <form id="signupForm">
+                    <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Signup</button>
+                </form>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fake Review Section -->
+    <section id="fake-review">
+        <div class="review-container">
+            <h2>Fake Review</h2>
+            <form id="fakeReviewForm">
+                <input type="text" placeholder="Your Name" required>
+                <textarea placeholder="Your Review" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="fakeReviewMessage"></div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <header>
+            <h1>FOOD NINJA</h1>
+        </header>
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Basic CSS for styling the contact us page */
+body {
+    font-family: 'Marhey', cursive;
+    background: #f6f5f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #ff4b2b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.contact-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: 'Bangers', cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Marhey', cursive;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #ff4b2b;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Marhey', cursive;
+}
+
+button:hover {
+    background-color: #ff3a1a;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    font-size: 14px;
+    color: green;
+}
